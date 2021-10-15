@@ -1,0 +1,40 @@
+.img-container {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.logo {
+    object-fit: contain;
+    width: auto;
+    height: 300px;
+}
+
+.page-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.easy-border {
+    border: solid 10px #739E6C;
+}
+
+.medium-border {
+    border: solid 10px #E89B55;
+}
+
+.hard-border {
+    border: solid 10px #CC4444;
+}
+
+.hint-container {
+    background-color: rgba(115, 158, 108, 0.37);
+    height: 30%;
+    width: 75%;
+    margin-top: 40px;
+    border-radius: 20px;
+}

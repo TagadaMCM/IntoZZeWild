@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html {
+    background-color: #B5CAD2;
+}
+
+.title {
+    color: #fff;
+    font-family: "bungee";
+}
+
+@font-face {
+    font-family: "bungee";
+    src: url(assets/font/Bungee-Regular.ttf) format('truetype');
+}
