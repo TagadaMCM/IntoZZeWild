@@ -37,4 +37,32 @@
     width: 75%;
     margin-top: 40px;
     border-radius: 20px;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint-title {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.hint-content {
+    width: 90%;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.img-hint-container {
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-hint {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
 }

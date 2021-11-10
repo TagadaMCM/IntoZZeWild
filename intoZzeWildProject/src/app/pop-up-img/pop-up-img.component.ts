@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogData } from '../place-details/place-details.component';
 
 @Component({
   selector: 'app-pop-up-img',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopUpImgComponent implements OnInit {
 
-  constructor() { }
+  //private view: View;
+
+  constructor(public dialogRef: MatDialogRef<PopUpImgComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 
   ngOnInit(): void {
+    
   }
 
 }

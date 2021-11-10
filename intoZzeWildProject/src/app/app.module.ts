@@ -14,7 +14,8 @@ import { PlaceComponent } from './place/place.component';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { PlaceDetailsComponent } from './place-details/place-details.component';
 import { PopUpImgComponent } from './pop-up-img/pop-up-img.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { PopUpImgComponent } from './pop-up-img/pop-up-img.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    PinchZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]
