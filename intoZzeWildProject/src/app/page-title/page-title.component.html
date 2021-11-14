@@ -3,15 +3,19 @@
 </mat-toolbar>
 <mat-toolbar class="rules-toolbar title" *ngIf="title == 'rules'">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../home']">arrow_back</mat-icon>
-    <mat-icon style="margin-right: 5px;"> assignment</mat-icon> Règles du jeu 
+    <mat-icon style="margin-right: 5px;"> assignment</mat-icon> Règles du jeu
 </mat-toolbar>
 <mat-toolbar class="map-toolbar title" *ngIf="title == 'map'">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../home']">arrow_back</mat-icon>
-    <mat-icon style="margin-right: 5px;"> map</mat-icon> Carte 
+    <mat-icon style="margin-right: 5px;"> map</mat-icon> Carte
 </mat-toolbar>
 <mat-toolbar class="places-toolbar title" *ngIf="title == 'places'">
-    <mat-icon style="margin-right: 20px;" [routerLink]="['../home']">arrow_back</mat-icon>
-    <mat-icon style="margin-right: 5px;"> place</mat-icon> Lieux
+  <mat-icon style="margin-right: 20px;" [routerLink]="['../home']">arrow_back</mat-icon>
+  <mat-icon style="margin-right: 5px;"> place</mat-icon> Lieux
+</mat-toolbar>
+<mat-toolbar class="places-toolbar title" *ngIf="title == 'places-details'">
+  <mat-icon style="margin-right: 20px;" [routerLink]="['/places']">arrow_back</mat-icon>
+  <mat-icon style="margin-right: 5px;"> place</mat-icon> Lieux
 </mat-toolbar>
 <mat-toolbar *ngIf="number != 0 && difficulty == 0" class="button-place easy">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../../places']">arrow_back</mat-icon>

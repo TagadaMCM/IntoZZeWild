@@ -1,20 +1,42 @@
-<app-page-title [number]="id" [difficulty]="difficulty"></app-page-title>
+<app-page-title title="places-details" number="0"></app-page-title>
+
+<app-page-title [number]="id" [difficulty]="place.level"></app-page-title>
+
 <div class="page-details-container">
     <div class="img-container easy-border" (click)="openDialog()">
-        <img src="../../assets/default-image.jpeg" class="logo"/>
+        <img src="{{place.image}}" class="logo"/>
     </div>
-    <div class="hint-container">
-        <div class="hint-title">
-            <span>Indice</span>
-            <hr size="1" color="white">
-        </div>
-        <div class="hint-content">
-            <span *ngIf="id == 1">
-                “ Lorem ipsum dolor sit amet. Aut sequi possimus eos Quis animi...”
+  <div class="hint-container">
+    <div class="hint-title">
+      <span>Indice</span>
+      <hr size="1" color="white">
+    </div>
+    <div class="hint-content">
+            <span>
+                {{place.tip}}
             </span>
-            <div class="img-hint-container" (click)="openDialog()" *ngIf="id == 2">
-                <img src="../../assets/default-image.jpeg" class="img-hint"/>
-            </div>
-        </div>
+      <div class="img-hint-container" (click)="openDialog()" *ngIf="id == 2">
+        <img src="{{place.image}}" class="img-hint"/>
+      </div>
     </div>
+  </div>
+  <div class="hint-container">
+    <div class="hint-title">
+      <span>Description</span>
+      <hr size="1" color="white">
+    </div>
+    <div class="hint-content">
+      <span>
+          {{place.description}}
+      </span>
+      <span>
+        <button *ngIf="!place.found" mat-raised-button (click)="checkPlace()">
+          CHECK !
+        </button>
+        <button *ngIf="place.found" mat-raised-button (click)="uncheckPlace()">
+          UNCHECK !
+        </button>
+      </span>
+    </div>
+  </div>
 </div>

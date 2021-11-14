@@ -9,15 +9,14 @@ export class PageTitleComponent implements OnInit {
 
   @Input()
   title: string;
-  
+
   @Input()
   number: number;
 
   @Input()
   difficulty: number;
 
-  constructor() { 
-    
+  constructor() {
   }
 
   ngOnInit(): void {
