@@ -16,6 +16,8 @@ import { PlaceDetailsComponent } from './place-details/place-details.component';
 import { PopUpImgComponent } from './pop-up-img/pop-up-img.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { PinchZoomModule } from 'ngx-pinch-zoom';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
-    PinchZoomModule
+    PinchZoomModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

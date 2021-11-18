@@ -4,7 +4,7 @@
 
   <button *ngFor="let place of places" mat-raised-button class="button-place {{place.level}}" [routerLink]="['/places/', place.id]">
     <div class="white-round {{place.level}}-font">{{place.id}}</div>
-    {{place.name}} <ng-container *ngIf="place.found">(Trouvé)</ng-container>
+    {{place.name}} <ng-container *ngIf="place.found"><mat-icon>verified</mat-icon></ng-container>
   </button>
 
 </div>

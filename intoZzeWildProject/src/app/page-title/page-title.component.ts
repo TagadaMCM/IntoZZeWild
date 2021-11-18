@@ -14,7 +14,7 @@ export class PageTitleComponent implements OnInit {
   number: number;
 
   @Input()
-  difficulty: number;
+  difficulty: String;
 
   constructor() {
   }

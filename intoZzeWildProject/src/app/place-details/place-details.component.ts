@@ -22,6 +22,7 @@ export class PlaceDetailsComponent implements OnInit {
 
   public id: number;
   image: string;
+  hintImage: boolean;
 
   constructor(private router: Router, private route: ActivatedRoute, public dialog: MatDialog, public placeService: PlacesService) { }
 
@@ -30,13 +31,14 @@ export class PlaceDetailsComponent implements OnInit {
 
     const places = this.placeService.getPlaces();
     this.place = places.find(p => p.id === this.id);
+    this.hintImage = this.place.tip.includes("hint");
   }
 
   openDialog() {
     const dialogRef = this.dialog.open(PopUpImgComponent, {
       width: '400px',
       height: '400px',
-      data: {image: this.place.image}
+      data: {image: this.place.tip}
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -64,6 +66,14 @@ export class PlaceDetailsComponent implements OnInit {
 
     // redirect to the places page
     this.router.navigate(['/places']);
+  }
+
+  changeCheckPlace() {
+    if (this.place.found) {
+      this.uncheckPlace();
+    } else {
+      this.checkPlace();
+    }
   }
 
 }

@@ -22,3 +22,8 @@ html {
     font-family: "bungee";
     src: url(assets/font/Bungee-Regular.ttf) format('truetype');
 }
+
+.mat-checkbox-inner-container {
+    height: 20px !important;
+    width: 20px !important;
+}

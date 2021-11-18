@@ -17,17 +17,17 @@
   <mat-icon style="margin-right: 20px;" [routerLink]="['/places']">arrow_back</mat-icon>
   <mat-icon style="margin-right: 5px;"> place</mat-icon> Lieux
 </mat-toolbar>
-<mat-toolbar *ngIf="number != 0 && difficulty == 0" class="button-place easy">
+<mat-toolbar *ngIf="number != 0 && difficulty == 'easy'" class="button-place easy">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../../places']">arrow_back</mat-icon>
     <div class="white-round easy-font">{{number}}</div>
         Lieu {{number}}
 </mat-toolbar>
-<mat-toolbar *ngIf="number != 0 && difficulty == 1" class="button-place medium">
+<mat-toolbar *ngIf="number != 0 && difficulty == 'medium'" class="button-place medium">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../../places']">arrow_back</mat-icon>
     <div class="white-round medium-font">{{number}}</div>
         Lieu {{number}}
 </mat-toolbar>
-<mat-toolbar *ngIf="number != 0 && difficulty == 2" class="button-place hard">
+<mat-toolbar *ngIf="number != 0 && difficulty == 'hard'" class="button-place hard">
     <mat-icon style="margin-right: 20px;" [routerLink]="['../../places']">arrow_back</mat-icon>
     <div class="white-round hard-font">{{number}}</div>
         Lieu {{number}}
