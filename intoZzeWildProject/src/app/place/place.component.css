@@ -4,10 +4,17 @@
     align-items: center;
     height: 90%;
     overflow-y: scroll;
+    padding: 20px;
 }
 
+.mat-expansion-panel-header-title {
+    font-family: "bungee";
+    color: #fff;
+}
+
+
 .button-place {
-    width: 75%;
+    width: 100%;
     height: auto;
     font-family: "bungee";
     color: #fff;
@@ -53,4 +60,14 @@
 
 .hard-font {
     color: #CC4444;
+}
+
+::ng-deep.mat-expansion-indicator::after {
+    color: #fff !important;
+}
+
+.verif {
+    position: absolute;
+    right: 20px;
+    bottom: 32%;
 }

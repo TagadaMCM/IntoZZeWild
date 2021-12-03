@@ -6,7 +6,8 @@ export class Place extends Serializable {
   tip: string;
   image: string;
   level: string;
-  found: boolean
+  found: boolean;
+  categoryId: number;
 
   constructor(jsonObject: any) {
     super(jsonObject);

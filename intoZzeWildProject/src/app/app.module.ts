@@ -17,6 +17,7 @@ import { PopUpImgComponent } from './pop-up-img/pop-up-img.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatButtonModule,
     MatDialogModule,
     PinchZoomModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
